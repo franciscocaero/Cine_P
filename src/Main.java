@@ -1,14 +1,13 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            JFrame frame = new JFrame("Menu para  perfil");
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            Menu menu = new Menu();
-            frame.add(menu.Perfil);
-            frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
-            frame.setVisible(true);
-        });
+        JFrame frame=new JFrame("Información de películas");
+        frame.setContentPane(new FechaHora().elegirHorario);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setExtendedState(Frame.MAXIMIZED_BOTH);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
     }
 }
