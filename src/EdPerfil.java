@@ -8,7 +8,7 @@ public class EdPerfil {
     private JPasswordField passwordField1;
     private JLabel Nombre;
     public JPanel Dato;
-    private JLabel A;
+    private JLabel Apellido;
     private JLabel Cont;
     private JLabel Cor;
     public JPanel getDato() {
